@@ -29,7 +29,7 @@ export default function PredictImage() {
       };
 
       // Use Axios instead of fetch
-      const response = await axios.post(api1, requestBody, {
+      const response = await axios.post(api, requestBody, {
         headers: {
           'Content-Type': 'application/json'
         }
