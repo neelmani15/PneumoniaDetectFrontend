@@ -11,6 +11,7 @@ export default function PredictImage() {
 
   const api = 'http://localhost:5000/predict';
   const api1 = 'https://pneumonia-detect.vercel.app/predict';
+  const api2 = 'https://pneumonia-detect-backend.vercel.app/predict';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -29,7 +30,7 @@ export default function PredictImage() {
       };
 
       // Use Axios instead of fetch
-      const response = await axios.post(api, requestBody, {
+      const response = await axios.post(api2, requestBody, {
         headers: {
           'Content-Type': 'application/json'
         }
