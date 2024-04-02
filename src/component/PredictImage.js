@@ -11,7 +11,7 @@ export default function PredictImage() {
 
   const api = 'http://localhost:5000/predict';
   const api1 = 'https://pneumonia-detect.vercel.app/predict';
-  const api2 = 'https://pneumonia-detect-backend.vercel.app/predict';
+  const api2 = 'http://3.87.4.81:5000/predict';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
